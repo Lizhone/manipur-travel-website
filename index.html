@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Manipur</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#home" class="logo">
+            <span>M</span>anipur
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form class="search-bar-container" id="search-form">
+
+            <input type="search"
+                id="search-bar"
+                placeholder="search here...">
+
+            <label for="search-bar"
+                class="fas fa-search"></label>
+
+        </form>
+
+    </header>
+
+
+    <!-- ================= LOGIN FORM ================= -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form id="login-form">
+
+            <h3>login</h3>
+
+            <input type="email"
+                class="box"
+                placeholder="enter your email"
+                required>
+
+            <input type="password"
+                class="box"
+                placeholder="enter your password"
+                required>
+
+            <input type="submit"
+                value="login now"
+                class="btn">
+
+            <div class="remember">
+
+                <input type="checkbox"
+                    id="remember">
+
+                <label for="remember">
+                    remember me
+                </label>
+
+            </div>
+
+            <p>
+                forget password?
+                <a href="#">click here</a>
+            </p>
+
+            <p>
+                don't have an account?
+                <a href="#">register now</a>
+            </p>
+
+        </form>
+
+    </div>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+
+            <h3>
+                explore the beauty of Manipur
+            </h3>
+
+            <p>
+                discover beautiful hills, lakes, culture
+                and unforgettable experiences
+            </p>
+
+            <a href="#packages" class="btn">
+                discover more
+            </a>
+
+        </div>
+
+        <div class="controls">
+
+            <span class="vid-btn active"
+                data-src="images/hero-1.mp4"></span>
+
+            <span class="vid-btn"
+                data-src="images/hero-2.mp4"></span>
+
+            <span class="vid-btn"
+                data-src="images/hero-3.mp4"></span>
+
+        </div>
+
+        <div class="video-container">
+
+            <video
+                src="images/hero-1.mp4"
+                id="video-slider"
+                loop
+                autoplay
+                muted
+                playsinline>
+            </video>
+
+        </div>
+
+        <div class="home-overlay"></div>
+
+    </section>
+
+
+    <!-- ================= BOOK ================= -->
+
+    <section class="book" id="book">
+
+        <h1 class="heading">
+
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+
+            <span class="space"></span>
+
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+
+        </h1>
+
+
+        <div class="row">
+
+            <div class="image">
+
+                <img
+                    src="images/book-img.svg"
+                    alt="Travel booking">
+
+            </div>
+
+
+            <form id="booking-form">
+
+                <div class="inputBox">
+
+                    <h3>where to</h3>
+
+                    <input
+                        type="text"
+                        id="destination"
+                        placeholder="place name"
+                        required>
+
+                </div>
+
+
+                <div class="inputBox">
+
+                    <h3>how many</h3>
+
+                    <input
+                        type="number"
+                        id="guests"
+                        min="1"
+                        placeholder="number of guests"
+                        required>
+
+                </div>
+
+
+                <div class="inputBox">
+
+                    <h3>arrivals</h3>
+
+                    <input
+                        type="date"
+                        id="arrival"
+                        required>
+
+                </div>
+
+
+                <div class="inputBox">
+
+                    <h3>leaving</h3>
+
+                    <input
+                        type="date"
+                        id="leaving"
+                        required>
+
+                </div>
+
+
+                <input
+                    type="submit"
+                    value="book now"
+                    class="btn">
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PACKAGES ================= -->
+
+    <section class="packages" id="packages">
+
+        <h1 class="heading">
+
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+
+        </h1>
+
+
+        <div class="box-container">
+
+
+            <!-- PACKAGE 1 -->
+
+            <div class="box">
+
+                <img
+                    src="images/p-1.jpg"
+                    alt="Imphal">
+
+                <div class="content">
+
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Imphal
+                    </h3>
+
+                    <p>
+                        Explore the capital city of Manipur,
+                        its historic landmarks, markets and culture.
+                    </p>
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                    <div class="price">
+                        ₹4,499
+                        <span>₹5,499</span>
+                    </div>
+
+                    <a href="#book"
+                        class="btn package-book">
+                        book now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PACKAGE 2 -->
+
+            <div class="box">
+
+                <img
+                    src="images/p-2.jpg"
+                    alt="Loktak Lake">
+
+                <div class="content">
+
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Loktak Lake
+                    </h3>
+
+                    <p>
+                        Experience Manipur's famous freshwater lake,
+                        floating phumdis and peaceful surroundings.
+                    </p>
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                    <div class="price">
+                        ₹4,999
+                        <span>₹6,199</span>
+                    </div>
+
+                    <a href="#book"
+                        class="btn package-book">
+                        book now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PACKAGE 3 -->
+
+            <div class="box">
+
+                <img
+                    src="images/p-3.jpg"
+                    alt="Keibul Lamjao National Park">
+
+                <div class="content">
+
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Keibul Lamjao
+                    </h3>
+
+                    <p>
+                        Discover the floating national park
+                        and the natural habitat of the Sangai deer.
+                    </p>
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+
+                    </div>
+
+                    <div class="price">
+                        ₹5,499
+                        <span>₹6,499</span>
+                    </div>
+
+                    <a href="#book"
+                        class="btn package-book">
+                        book now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PACKAGE 4 -->
+
+            <div class="box">
+
+                <img
+                    src="images/p-4.jpg"
+                    alt="Shirui Hills">
+
+                <div class="content">
+
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Shirui Hills
+                    </h3>
+
+                    <p>
+                        Explore the beautiful mountain landscapes
+                        of Ukhrul and the famous Shirui Hills.
+                    </p>
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                    <div class="price">
+                        ₹5,999
+                        <span>₹7,199</span>
+                    </div>
+
+                    <a href="#book"
+                        class="btn package-book">
+                        book now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PACKAGE 5 -->
+
+            <div class="box">
+
+                <img
+                    src="images/p-5.jpg"
+                    alt="Kapamodzii">
+
+                <div class="content">
+
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Kapamodzii
+                    </h3>
+
+                    <p>
+                        Discover a peaceful Manipur destination
+                        surrounded by greenery and local charm.
+                    </p>
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                    <div class="price">
+                        ₹4,799
+                        <span>₹5,799</span>
+                    </div>
+
+                    <a href="#book"
+                        class="btn package-book">
+                        book now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PACKAGE 6 -->
+
+            <div class="box">
+
+                <img
+                    src="images/p-6.jpg"
+                    alt="Hanging Village">
+
+                <div class="content">
+
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Hanging Village
+                    </h3>
+
+                    <p>
+                        Experience a unique village setting,
+                        local traditions and peaceful landscapes.
+                    </p>
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                    <div class="price">
+                        ₹4,599
+                        <span>₹5,599</span>
+                    </div>
+
+                    <a href="#book"
+                        class="btn package-book">
+                        book now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PACKAGE 7 -->
+
+            <div class="box">
+
+                <img
+                    src="images/p-7.jpg"
+                    alt="Moreh">
+
+                <div class="content">
+
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Moreh
+                    </h3>
+
+                    <p>
+                        Visit the important border town of Moreh
+                        and experience its multicultural atmosphere.
+                    </p>
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+
+                    </div>
+
+                    <div class="price">
+                        ₹5,299
+                        <span>₹6,299</span>
+                    </div>
+
+                    <a href="#book"
+                        class="btn package-book">
+                        book now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PACKAGE 8 -->
+
+            <div class="box">
+
+                <img
+                    src="images/p-8.jpg"
+                    alt="Dzukou Valley">
+
+                <div class="content">
+
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Dzukou Valley
+                    </h3>
+
+                    <p>
+                        Enjoy a trekking-focused experience
+                        in the scenic Manipur–Nagaland border region.
+                    </p>
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                    <div class="price">
+                        ₹6,499
+                        <span>₹7,499</span>
+                    </div>
+
+                    <a href="#book"
+                        class="btn package-book">
+                        book now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="services" id="services">
+
+        <h1 class="heading">
+
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+
+        </h1>
+
+
+        <div class="box-container">
+
+
+            <div class="box">
+
+                <i class="fas fa-hotel"></i>
+
+                <h3>
+                    affordable hotels
+                </h3>
+
+                <p>
+                    Comfortable accommodation options
+                    for your Manipur journey.
+                </p>
+
+            </div>
+
+
+            <div class="box">
+
+                <i class="fas fa-utensils"></i>
+
+                <h3>
+                    local food & drinks
+                </h3>
+
+                <p>
+                    Discover traditional flavours
+                    and local food experiences.
+                </p>
+
+            </div>
+
+
+            <div class="box">
+
+                <i class="fas fa-bullhorn"></i>
+
+                <h3>
+                    local travel guide
+                </h3>
+
+                <p>
+                    Helpful information for exploring
+                    Manipur's destinations and culture.
+                </p>
+
+            </div>
+
+
+            <div class="box">
+
+                <i class="fas fa-globe-asia"></i>
+
+                <h3>
+                    around Manipur
+                </h3>
+
+                <p>
+                    Explore lakes, hills, wildlife,
+                    historical places and villages.
+                </p>
+
+            </div>
+
+
+            <div class="box">
+
+                <i class="fas fa-plane"></i>
+
+                <h3>
+                    comfortable travel
+                </h3>
+
+                <p>
+                    Convenient travel arrangements
+                    between your chosen destinations.
+                </p>
+
+            </div>
+
+
+            <div class="box">
+
+                <i class="fas fa-hiking"></i>
+
+                <h3>
+                    adventures
+                </h3>
+
+                <p>
+                    Enjoy trekking, nature exploration
+                    and outdoor experiences.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">
+
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+
+        </h1>
+
+
+        <div class="box-container">
+
+
+            <div class="box">
+
+                <img
+                    src="images/g-1.jpg"
+                    alt="Loktak Lake">
+
+                <div class="content">
+
+                    <h3>
+                        Loktak Lake
+                    </h3>
+
+                    <p>
+                        Floating landscapes and peaceful waters.
+                    </p>
+
+                    <a href="#book"
+                        class="btn">
+                        explore
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="box">
+
+                <img
+                    src="images/g-2.jpg"
+                    alt="Shirui Hills">
+
+                <div class="content">
+
+                    <h3>
+                        Shirui Hills
+                    </h3>
+
+                    <p>
+                        Beautiful mountain scenery in Ukhrul.
+                    </p>
+
+                    <a href="#book"
+                        class="btn">
+                        explore
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="box">
+
+                <img
+                    src="images/g-3.jpg"
+                    alt="Kangla Fort">
+
+                <div class="content">
+
+                    <h3>
+                        Kangla Fort
+                    </h3>
+
+                    <p>
+                        A historic landmark in Imphal.
+                    </p>
+
+                    <a href="#book"
+                        class="btn">
+                        explore
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="box">
+
+                <img
+                    src="images/g-4.jpg"
+                    alt="Keibul Lamjao">
+
+                <div class="content">
+
+                    <h3>
+                        Keibul Lamjao
+                    </h3>
+
+                    <p>
+                        A unique floating national park.
+                    </p>
+
+                    <a href="#book"
+                        class="btn">
+                        explore
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="box">
+
+                <img
+                    src="images/g-5.jpg"
+                    alt="Ima Keithel">
+
+                <div class="content">
+
+                    <h3>
+                        Ima Keithel
+                    </h3>
+
+                    <p>
+                        Explore the famous women's market of Imphal.
+                    </p>
+
+                    <a href="#book"
+                        class="btn">
+                        explore
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="box">
+
+                <img
+                    src="images/g-6.jpg"
+                    alt="Sadu Chiru Waterfall">
+
+                <div class="content">
+
+                    <h3>
+                        Sadu Chiru
+                    </h3>
+
+                    <p>
+                        A scenic waterfall surrounded by greenery.
+                    </p>
+
+                    <a href="#book"
+                        class="btn">
+                        explore
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="box">
+
+                <img
+                    src="images/g-7.jpg"
+                    alt="Moirang">
+
+                <div class="content">
+
+                    <h3>
+                        Moirang
+                    </h3>
+
+                    <p>
+                        A culturally and historically significant place.
+                    </p>
+
+                    <a href="#book"
+                        class="btn">
+                        explore
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="box">
+
+                <img
+                    src="images/g-8.jpg"
+                    alt="Manipur hills">
+
+                <div class="content">
+
+                    <h3>
+                        Manipur Hills
+                    </h3>
+
+                    <p>
+                        Peaceful landscapes and outdoor adventures.
+                    </p>
+
+                    <a href="#book"
+                        class="btn">
+                        explore
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REVIEW ================= -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">
+
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+
+        </h1>
+
+
+        <div class="review-slider">
+
+            <button
+                class="slider-btn prev"
+                aria-label="Previous review">
+
+                <i class="fas fa-chevron-left"></i>
+
+            </button>
+
+
+            <div class="review-track">
+
+
+                <div class="review-card">
+
+                    <img
+                        src="images/pic1.png"
+                        alt="Traveler">
+
+                    <h3>
+                        Riya Sharma
+                    </h3>
+
+                    <p>
+                        The Loktak Lake trip was peaceful
+                        and memorable. The natural scenery
+                        made the journey special.
+                    </p>
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <img
+                        src="images/pic2.png"
+                        alt="Traveler">
+
+                    <h3>
+                        Arjun Singh
+                    </h3>
+
+                    <p>
+                        Shirui Hills was beautiful.
+                        The trip was well organized
+                        and enjoyable.
+                    </p>
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <img
+                        src="images/pic3.png"
+                        alt="Traveler">
+
+                    <h3>
+                        Anita Devi
+                    </h3>
+
+                    <p>
+                        Keibul Lamjao was an amazing
+                        experience and the floating ecosystem
+                        was fascinating.
+                    </p>
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <img
+                        src="images/pic4.png"
+                        alt="Traveler">
+
+                    <h3>
+                        David Kumar
+                    </h3>
+
+                    <p>
+                        Exploring Imphal and the surrounding
+                        places was a great experience.
+                    </p>
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <button
+                class="slider-btn next"
+                aria-label="Next review">
+
+                <i class="fas fa-chevron-right"></i>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+  <!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">
+
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+
+    </h1>
+
+
+    <div class="row">
+
+        <div class="image">
+
+            <img
+                src="images/g-8.jpg"
+                alt="Manipur Hills">
+
+        </div>
+
+
+        <form id="contact-form">
+
+            <div class="inputBox">
+
+                <input
+                    type="text"
+                    placeholder="name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="email"
+                    required>
+
+            </div>
+
+
+            <div class="inputBox">
+
+                <input
+                    type="tel"
+                    placeholder="phone number">
+
+                <input
+                    type="text"
+                    placeholder="subject">
+
+            </div>
+
+
+            <textarea
+                cols="30"
+                rows="10"
+                placeholder="message"
+                required></textarea>
+
+
+            <input
+                type="submit"
+                value="send message"
+                class="btn">
+
+        </form>
+
+    </div>
+
+</section>
+
+    <!-- ================= BRAND ================= -->
+
+    <section class="brand">
+
+        <div class="brand-track">
+
+            <div class="brand-item">
+
+                <i class="fas fa-mountain"></i>
+
+                <span>
+                    Manipur Tourism
+                </span>
+
+            </div>
+
+
+            <div class="brand-item">
+
+                <i class="fas fa-map-marked-alt"></i>
+
+                <span>
+                    Explore Manipur
+                </span>
+
+            </div>
+
+
+            <div class="brand-item">
+
+                <i class="fas fa-leaf"></i>
+
+                <span>
+                    Nature Trails
+                </span>
+
+            </div>
+
+
+            <div class="brand-item">
+
+                <i class="fas fa-route"></i>
+
+                <span>
+                    Travel Manipur
+                </span>
+
+            </div>
+
+
+            <div class="brand-item">
+
+                <i class="fas fa-camera"></i>
+
+                <span>
+                    Manipur Experiences
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-box">
+
+                <h3>
+                    about us
+                </h3>
+
+                <p>
+                    Explore Manipur is a travel website
+                    concept designed to showcase the
+                    destinations, culture, nature and
+                    experiences of Manipur.
+                </p>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>
+                    destinations
+                </h3>
+
+                <a href="#packages">Imphal</a>
+                <a href="#packages">Loktak Lake</a>
+                <a href="#packages">Shirui Hills</a>
+                <a href="#packages">Moreh</a>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>
+                    quick links
+                </h3>
+
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#services">services</a>
+                <a href="#gallery">gallery</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>
+                    follow us
+                </h3>
+
+                <a href="#">
+                    <i class="fab fa-facebook"></i>
+                    facebook
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                    instagram
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                    youtube
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                    linkedin
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <h1 class="credit">
+
+            created for
+            <span>Manipur travel</span>
+            | all rights reserved
+
+        </h1>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
